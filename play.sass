@@ -1,0 +1,119 @@
+// @see https://codepen.io/tahadib/pen/vYOEdBp
+
+.player-container
+    padding: 2rem
+    max-width: 700px
+    margin: auto
+
+    .player
+        width: 100%
+        height: 0
+        padding-bottom: 56.25%
+        box-shadow: 0 10px 0 -3px rgba(0, 0, 0, 0.2)
+        position: relative
+        overflow: hidden
+        background: #000000
+
+        &:fullscreen, &:-webkit-full-screen, &:-moz-full-screen, &:-ms-fullscreen
+            padding-bottom: 100vh
+
+        &:hover .controls
+            bottom: 0
+            transition: all 0.2s ease-out
+
+        video
+            width: 100%
+            height: auto
+
+        .controls
+            padding: 0
+            position: absolute
+            bottom: -80px
+            width: 100%
+            height: 48px
+            box-sizing: border-box
+            background: linear-gradient(180deg, rgba(37, 37, 37, 0) 10%, rgba(37, 37, 37, 0.6) 80%)
+            transition: all 0.2s ease-in 5s
+
+            .time
+                bottom: 100%
+                font-family: Creepster
+                font-size: 1.5rem
+                padding-bottom: 14px
+                position: absolute
+                right: 30px
+
+            .progress
+                cursor: pointer
+                height: 8px
+                width: calc(100% - 40px)
+                background: rgba(60, 60, 60, 0.6)
+                margin: auto
+                border-radius: 6px
+                position: absolute
+                left: 20px
+                bottom: 100%
+                transition: height 0.1s ease-in-out
+
+                &:hover
+                    height: 10px
+
+                .progress-filled
+                    background: #0094ff
+                    width: 0
+                    height: 100%
+                    border-radius: 6px
+                    transition: all 0.1s
+
+            .controls-main
+                width: calc(100% - 2rem)
+                margin: auto
+
+                .material-icons
+                    font-size: 2.5rem
+                    margin-top: 0.25rem
+
+                .speed-list
+                    list-style: none
+                    margin: 0
+                    padding: 0
+                    display: flex
+                    text-align: center
+
+                    li
+                        color: #ffffff
+                        font-family: Creepster
+                        font-size: 1.05rem
+                        padding: 5px
+                        cursor: pointer
+
+                        &:hover, &.active
+                            color: #0094ff
+
+                .volume-slider
+                    cursor: pointer
+                    height: 8px
+                    width: 80px
+                    background: rgba(60, 60, 60, 0.6)
+                    border-radius: 6px
+                    position: relative
+
+                    .volume-filled
+                        background: #ffffff
+                        width: 100%
+                        height: 100%
+                        border-radius: 6px
+                        transition: width 0.2s ease-in-out
+
+                        &:hover
+                            background: #0094ff
+
+.thumb
+    width: 23%
+    border: 1px solid #919191
+    text-align: center
+    text-transform: uppercase
+    line-height: 50px
+    background-size: 100% auto
+    cursor: pointer
+    font-size: 80%

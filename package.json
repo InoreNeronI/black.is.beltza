@@ -1,0 +1,16 @@
+{
+  "name": "HTML5 audio and video showcase",
+  "version": "1.0.0",
+  "repository": "https://github.com/InoreNeronI/black.is.beltza.git",
+  "author": "InoreNeronI <martinmozos@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "parcel build *.html",
+    "start": "parcel serve *.html --open"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.10.1",
+    "parcel": "^2.10.1"
+  }
+}
