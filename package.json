@@ -10,7 +10,7 @@
     "start": "parcel serve *.html --open"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "2.10.1",
-    "parcel": "^2.10.1"
+    "@parcel/transformer-sass": "2.10.3",
+    "parcel": "^2.10.3"
   }
 }
