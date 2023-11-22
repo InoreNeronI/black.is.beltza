@@ -1,1 +1,1 @@
-## HTML5 audio and video showcase 🎃
+## HTML5 video player showcase 🎥

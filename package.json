@@ -1,16 +1,31 @@
 {
-  "name": "HTML5 audio and video showcase",
+  "name": "HTML5 video player showcase",
   "version": "1.0.0",
-  "repository": "https://github.com/InoreNeronI/black.is.beltza.git",
-  "author": "InoreNeronI <martinmozos@gmail.com>",
-  "license": "MIT",
-  "private": true,
+  "homepage": "https://github.com/InoreNeronI/responsive-video-player",
   "scripts": {
-    "build": "parcel build *.html",
-    "start": "parcel serve *.html --open"
+    "start": "parcel serve *.html --open",
+    "build": "parcel build *.html --public-url /responsive-video-player",
+    "prestart": "prettier . --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InoreNeronI/responsive-video-player.git"
+  },
+  "keywords": [],
+  "author": "Martin Mozos <martinmozos@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InoreNeronI/responsive-video-player/issues"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "2.10.3",
-    "parcel": "^2.10.3"
+    "@parcel/transformer-sass": "^2.10.3",
+    "parcel": "^2.10.3",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "prettier": "3.1.0"
+  },
+  "targets": {
+    "default": {
+      "context": "browser"
+    }
   }
 }
