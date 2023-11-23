@@ -1,5 +1,6 @@
 {
-  "name": "HTML5 video player showcase",
+  "name": "responsive-video-player",
+  "description": "HTML5 video player showcase",
   "version": "1.0.0",
   "homepage": "https://github.com/InoreNeronI/responsive-video-player",
   "scripts": {
