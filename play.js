@@ -157,8 +157,6 @@ speedBtns.forEach((speedBtn) => {
 window.addEventListener('keydown', handleKeypress);
 
 // @see https://codepen.io/eastcoastdeveloper/pen/LmxqKa
-const mp4 = document.getElementById('mp4');
-const webm = document.getElementById('webm');
 const selected = document.getElementById('selected');
 let mp4Url = '';
 let webmUrl = '';
@@ -181,8 +179,8 @@ function playVideo(ID) {
       webmUrl = 'https://fredrickjaxx.is/_assets/video/walking.Webm';
       break;
   }
-  mp4.setAttribute('src', mp4Url);
-  webm.setAttribute('src', webmUrl);
+  document.getElementById('mp4').setAttribute('src', mp4Url);
+  document.getElementById('webm').setAttribute('src', webmUrl);
   selected.setAttribute('value', ID);
   video.load();
   video.play();
